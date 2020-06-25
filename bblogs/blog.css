@@ -3,13 +3,6 @@ body {
     height: 100vh;
 }
 
-
-.logo {
-    width: 100%px;
-    height: 150px;
-    
-}
-
 header {
     height: 200px;
     width: 100%;
@@ -18,6 +11,53 @@ header {
     justify-content: center;
 
 }
+
+main {
+    grid-area: main;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.logo {
+    width: 100%px;
+    height: 150px;
+    
+}
+
+.artsnip {
+    display: grid;
+    border: solid black;
+    align-content: center;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: none;
+}
+
+.img-container {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    grid-column: 1/2;
+}
+
+.article {
+    display: grid;
+    grid-column: 2/3;
+
+}
+
+.side-img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.more {
+    background-color: lightslategray;
+    color: seashell;
+}
+
+
 
 .bars {
     display: none;
@@ -85,9 +125,7 @@ footer > p {
         grid-template-columns:1fr;
         grid-template-areas: 
         "header"
-        "section"
-        "pics"
-        "button"
+        "main"
         "footer";
 }
 
