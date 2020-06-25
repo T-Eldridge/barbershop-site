@@ -1,13 +1,6 @@
-html {
- height: 100vh;
- width: 100vw;
-}
-
 body {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1;
-    grid-auto-rows: 200px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .logo {
@@ -29,10 +22,6 @@ header {
 
 }
 
-nav {
-    text-align: center;
-}
-
 .bars {
     display: none;
     height: 20px;
@@ -41,31 +30,12 @@ nav {
 
 }
 
-.pic-container {
-    display: flex;
-   justify-content: center;
-}
-
-.trim {
-    width: 600px;
-}
-
-main {
-    width: 60%;
-    margin: 0 auto;
-    grid-area: main;
-    
-}
-
-
 .dropdown {
     position: relative;
     display: inline-block;
   }
-
-
   
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -75,30 +45,38 @@ main {
     z-index: 1;
   }
 
-  h1, h2, p {
-      text-align: center;
+  main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 400px;
+      margin: auto;
+      justify-content: space-evenly;
+      
   }
 
-  .greeting {
-      grid-area: greeting;
+  .img-container {
+      margin: 5px;
   }
 
-  h1 {
-      margin-top: 200px;
-      background-color: #252525;
-      color: ivory;
-    
+  #img {
+      width: 100px;
   }
 
 
 
-  footer > p {
+  footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #555555;
+    margin:0;
+
+}
+
+footer > p {
     text-align: start;
     margin: 0;
     align-content: flex-start;
-    background-color: #252525;
-    color: ivory;
-    grid-area: footer;
 } 
 
 .social {
@@ -108,17 +86,27 @@ main {
     
 }
 
-  @media (max-width: 1024px){
-  
+.social:hover {
+    cursor: pointer;
+    
+    
+}
+
+@media (max-width: 1024px){
+    body{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "header"
+        "form"
+        "footer";
+}
 
 
     nav {
         display: none;
-    }
+}
 
-    .mobile-b {
-        display: block;
-    }
 
     .bars {
         display: block;
@@ -130,5 +118,11 @@ main {
         display: block;
     }
 
-  
+    #message {
+        height: 100px;
+    }
+
+    form {
+        background-color: white;
+    }
 }
