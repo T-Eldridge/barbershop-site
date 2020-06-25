@@ -49,8 +49,14 @@ header {
   }
 
   h1 {
+      color: seashell;
       background-color: slategray;
       padding: 0;
+  }
+
+  form {
+      grid-area: form;
+      background-color: darkgrey;
   }
 
   #message {
@@ -107,4 +113,43 @@ footer > p {
     margin-left: auto;
     margin-right: auto;
     grid-area: button;
+}
+
+
+@media (max-width: 1024px){
+    body{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "header"
+        "form"
+        "footer";
+}
+
+
+    nav {
+        display: none;
+}
+
+    .mobile-b {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+        align-items: center;
+        margin-left: 50%;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #message {
+        height: 100px;
+    }
+
+    form {
+        background-color: white;
+    }
 }
