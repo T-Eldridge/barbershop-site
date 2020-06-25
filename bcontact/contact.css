@@ -43,7 +43,37 @@ header {
 
   main {
       text-align: center;
+      height: 100vh;
+      width: 60%;
+      margin: auto;
   }
+
+  h1 {
+      background-color: slategray;
+      padding: 0;
+  }
+
+  #message {
+      text-align: center;
+      height: 150px;
+      margin-bottom: 5px;
+  }
+
+  #fname, #address, #email, #phone {
+      text-align: center;
+      height: 50px;
+  }
+
+  #send {
+      width: 60px;
+      height: 40px;
+  }
+
+  input {
+      margin: 10px;
+  }
+
+  
 
   footer {
     grid-area: footer;
