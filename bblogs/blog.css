@@ -37,7 +37,7 @@ main {
     grid-template-columns: 20% 80%;
     grid-template-rows: none;
     height: 35%;
-    
+    margin-bottom: 50px;
 }
 
 .img-container {
@@ -65,7 +65,7 @@ p {
 .side-img {
     margin: 0;
     width: 220px;
-    border: solid black 5px;
+    border: solid black 2px;
     margin-top: 2px;
 }
 
