@@ -53,18 +53,36 @@ header {
       margin: auto;
       justify-content: space-evenly;
       height: 100vh;
+      grid-area: main;
       
       
   }
 
   .img-container {
       margin: 5px;
-      
+      margin-top: auto;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+      height: 315px;
   }
 
   #img {
       width: 100%;
       
+      
+      
+  }
+
+  #img:hover {
+      opacity: 50%;
+  }
+
+  .text-block {
+    position: relative;
+    bottom: 90px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
 
@@ -100,12 +118,15 @@ footer > p {
 @media (max-width: 1024px){
     body{
         display: grid;
-        grid-template-columns:1fr;
         grid-template-areas: 
         "header"
-        "form"
+        "main"
         "footer";
 }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 
 
     nav {
@@ -143,4 +164,7 @@ footer > p {
         grid-template-columns:1fr;
     }
 
+    .text-block {
+        font-size: 12px;
+    }
 }
