@@ -75,7 +75,7 @@ main {
     z-index: 1;
   }
 
-  h1, h2, p {
+  h1, h2 {
       text-align: center;
   }
 
@@ -90,15 +90,19 @@ main {
     
   }
 
+  p {
+      margin: 0;
+  }
 
 
-  footer > p {
-    text-align: start;
-    margin: 0;
-    align-content: flex-start;
-    background-color: #252525;
-    color: ivory;
+
+  footer  {
     grid-area: footer;
+    width: 100%;
+    background-color: #555555;
+    margin:0;
+    position: fixed;
+    bottom: 0px;
 } 
 
 .social {

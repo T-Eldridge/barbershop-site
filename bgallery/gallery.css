@@ -46,21 +46,25 @@ header {
   }
 
   main {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 400px;
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows: auto;
+      width: 75%;
       margin: auto;
       justify-content: space-evenly;
+      height: 100vh;
+      
       
   }
 
   .img-container {
       margin: 5px;
+      
   }
 
   #img {
-      width: 100px;
+      width: 100%;
+      
   }
 
 
@@ -70,7 +74,8 @@ header {
     width: 100%;
     background-color: #555555;
     margin:0;
-
+    position: fixed;
+    bottom: 0px;
 }
 
 footer > p {
@@ -125,4 +130,17 @@ footer > p {
     form {
         background-color: white;
     }
+
+    #img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    main {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
 }

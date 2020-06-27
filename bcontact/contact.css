@@ -97,6 +97,10 @@ footer > p {
     text-align: start;
     margin: 0;
     align-content: flex-start;
+    position: fixed;
+    bottom: 0px;
+    background-color: #555555;
+    width: 100%;
 } 
 
 .social {

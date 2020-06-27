@@ -64,39 +64,46 @@ header {
     object-fit: contain;
 }
 
-section{
+section {
     grid-area: section;
     display: flex;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 75%;
-    width: 100vw;
+    width: 80%;
     background-image: url("./bimages/barber.jpg");
     object-fit: contain;
+    margin: auto;
 }
 
 ul {
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 30px;
     background-color: aliceblue;
     margin: 0 auto;
     height: 40px;
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 50%; 
     transform: translate(-50%, -50%);
 }
 
 li {
-    background-color: aqua;
+    margin-top: 20px;
+    background-color: #252525;
     font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 20px;
 }
 
-button{
+ul > a {
+    margin-top: 20px;
     font-size: 35px;
     height: 50px;
     width: 250px;
     justify-content: flex-end;
-    background-color: aqua;
+    background: #0CA39C;
 }
 
 .image-two {
@@ -123,7 +130,8 @@ footer {
     width: 100%;
     background-color: #555555;
     margin:0;
-
+    position: fixed;
+    bottom: 0px;
 }
 
 footer > p {
@@ -145,11 +153,26 @@ footer > p {
     
 }
 
+span {
+    display: none;
+    grid-area: text;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    background: #252525;
+    width: 200px;
+    margin: auto;
+    font-size: 25px;
+}
+
 .mobile-b{
     display: none;
     margin-left: auto;
     margin-right: auto;
     grid-area: button;
+    background: #0CA39C;
+    padding-top: 15px;
 }
 
 @media (max-width: 1024px){
@@ -160,10 +183,15 @@ footer > p {
         "header"
         "section"
         "pics"
+        "text"
         "button"
         "footer";
 }
 
+
+span {
+    display: block;
+}
 section {
     height: 250px;
 }
